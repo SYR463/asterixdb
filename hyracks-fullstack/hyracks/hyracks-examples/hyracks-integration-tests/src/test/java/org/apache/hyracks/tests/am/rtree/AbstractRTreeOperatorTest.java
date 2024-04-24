@@ -73,8 +73,8 @@ import org.apache.hyracks.storage.am.common.freepage.AppendOnlyLinkedMetadataPag
 import org.apache.hyracks.storage.am.common.impls.NoOpOperationCallbackFactory;
 import org.apache.hyracks.storage.am.common.ophelpers.IndexOperation;
 import org.apache.hyracks.storage.am.lsm.rtree.utils.LSMRTreeUtils;
-import org.apache.hyracks.storage.am.rtree.frames.RTreePolicyType;
-import org.apache.hyracks.storage.am.rtree.util.RTreeUtils;
+import org.apache.hyracks.storage.am.trtree.frames.RTreePolicyType;
+import org.apache.hyracks.storage.am.trtree.util.RTreeUtils;
 import org.apache.hyracks.storage.common.IResourceFactory;
 import org.apache.hyracks.storage.common.IStorageManager;
 import org.apache.hyracks.test.support.TestStorageManager;

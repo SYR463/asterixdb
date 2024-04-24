@@ -33,9 +33,9 @@ import org.apache.hyracks.dataflow.common.utils.TupleUtils;
 import org.apache.hyracks.storage.am.common.api.IPrimitiveValueProviderFactory;
 import org.apache.hyracks.storage.am.common.api.ITreeIndex;
 import org.apache.hyracks.storage.am.common.impls.NoOpIndexAccessParameters;
-import org.apache.hyracks.storage.am.rtree.AbstractRTreeExamplesTest;
-import org.apache.hyracks.storage.am.rtree.frames.RTreePolicyType;
-import org.apache.hyracks.storage.am.rtree.util.RTreeUtils;
+import org.apache.hyracks.storage.am.trtree.AbstractRTreeExamplesTest;
+import org.apache.hyracks.storage.am.trtree.frames.RTreePolicyType;
+import org.apache.hyracks.storage.am.trtree.util.RTreeUtils;
 import org.apache.hyracks.storage.common.IIndexAccessor;
 import org.junit.Test;
 
