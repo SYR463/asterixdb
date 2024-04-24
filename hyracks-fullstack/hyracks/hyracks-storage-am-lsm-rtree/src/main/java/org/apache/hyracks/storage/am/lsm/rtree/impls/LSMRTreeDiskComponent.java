@@ -27,7 +27,7 @@ import org.apache.hyracks.storage.am.common.api.IMetadataPageManager;
 import org.apache.hyracks.storage.am.lsm.common.api.AbstractLSMWithBuddyDiskComponent;
 import org.apache.hyracks.storage.am.lsm.common.api.ILSMComponentFilter;
 import org.apache.hyracks.storage.am.lsm.common.impls.AbstractLSMIndex;
-import org.apache.hyracks.storage.am.rtree.impls.RTree;
+import org.apache.hyracks.storage.am.trtree.impls.RTree;
 import org.apache.hyracks.storage.common.buffercache.IBufferCache;
 
 public class LSMRTreeDiskComponent extends AbstractLSMWithBuddyDiskComponent {

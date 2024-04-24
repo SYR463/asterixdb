@@ -40,8 +40,8 @@ import org.apache.hyracks.dataflow.std.misc.ConstantTupleSourceOperatorDescripto
 import org.apache.hyracks.storage.am.common.api.IMetadataPageManagerFactory;
 import org.apache.hyracks.storage.am.common.api.IPrimitiveValueProviderFactory;
 import org.apache.hyracks.storage.am.common.impls.NoOpOperationCallbackFactory;
-import org.apache.hyracks.storage.am.rtree.dataflow.RTreeSearchOperatorDescriptor;
-import org.apache.hyracks.storage.am.rtree.frames.RTreePolicyType;
+import org.apache.hyracks.storage.am.trtree.dataflow.RTreeSearchOperatorDescriptor;
+import org.apache.hyracks.storage.am.trtree.frames.RTreePolicyType;
 import org.apache.hyracks.storage.common.IResourceFactory;
 import org.apache.hyracks.test.support.TestStorageManagerComponentHolder;
 import org.apache.hyracks.tests.am.common.ITreeIndexOperatorTestHelper;

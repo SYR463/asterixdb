@@ -25,7 +25,7 @@ import org.apache.hyracks.api.io.IIOManager;
 import org.apache.hyracks.storage.am.common.api.IMetadataPageManagerFactory;
 import org.apache.hyracks.storage.am.common.api.ITreeIndexFrameFactory;
 import org.apache.hyracks.storage.am.lsm.common.impls.TreeIndexFactory;
-import org.apache.hyracks.storage.am.rtree.impls.RTree;
+import org.apache.hyracks.storage.am.trtree.impls.RTree;
 import org.apache.hyracks.storage.common.buffercache.IBufferCache;
 
 public class RTreeFactory extends TreeIndexFactory<RTree> {

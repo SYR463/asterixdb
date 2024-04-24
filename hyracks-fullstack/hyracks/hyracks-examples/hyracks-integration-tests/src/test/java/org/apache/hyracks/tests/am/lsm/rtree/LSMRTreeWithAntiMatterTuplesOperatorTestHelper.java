@@ -30,7 +30,7 @@ import org.apache.hyracks.storage.am.lsm.common.impls.NoOpPageWriteCallbackFacto
 import org.apache.hyracks.storage.am.lsm.common.impls.SynchronousSchedulerProvider;
 import org.apache.hyracks.storage.am.lsm.common.impls.ThreadCountingOperationTrackerFactory;
 import org.apache.hyracks.storage.am.lsm.rtree.dataflow.LSMRTreeWithAntiMatterLocalResourceFactory;
-import org.apache.hyracks.storage.am.rtree.frames.RTreePolicyType;
+import org.apache.hyracks.storage.am.trtree.frames.RTreePolicyType;
 import org.apache.hyracks.storage.common.IResourceFactory;
 import org.apache.hyracks.storage.common.IStorageManager;
 import org.apache.hyracks.tests.am.common.LSMTreeOperatorTestHelper;

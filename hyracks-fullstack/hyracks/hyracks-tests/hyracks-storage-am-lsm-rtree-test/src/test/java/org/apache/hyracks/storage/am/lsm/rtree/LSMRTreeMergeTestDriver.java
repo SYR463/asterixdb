@@ -29,10 +29,10 @@ import org.apache.hyracks.storage.am.config.AccessMethodTestsConfig;
 import org.apache.hyracks.storage.am.lsm.common.api.ILSMIOOperation;
 import org.apache.hyracks.storage.am.lsm.common.api.ILSMIndexAccessor;
 import org.apache.hyracks.storage.am.lsm.rtree.impls.AbstractLSMRTree;
-import org.apache.hyracks.storage.am.rtree.AbstractRTreeTestContext;
-import org.apache.hyracks.storage.am.rtree.AbstractRTreeTestDriver;
-import org.apache.hyracks.storage.am.rtree.RTreeTestUtils;
-import org.apache.hyracks.storage.am.rtree.frames.RTreePolicyType;
+import org.apache.hyracks.storage.am.trtree.AbstractRTreeTestContext;
+import org.apache.hyracks.storage.am.trtree.AbstractRTreeTestDriver;
+import org.apache.hyracks.storage.am.trtree.RTreeTestUtils;
+import org.apache.hyracks.storage.am.trtree.frames.RTreePolicyType;
 
 @SuppressWarnings("rawtypes")
 public abstract class LSMRTreeMergeTestDriver extends AbstractRTreeTestDriver {

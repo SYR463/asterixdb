@@ -40,9 +40,9 @@ import org.apache.hyracks.storage.am.lsm.common.api.ILSMPageWriteCallbackFactory
 import org.apache.hyracks.storage.am.lsm.common.api.IVirtualBufferCache;
 import org.apache.hyracks.storage.am.lsm.rtree.impls.LSMRTreeWithAntiMatterTuples;
 import org.apache.hyracks.storage.am.lsm.rtree.utils.LSMRTreeUtils;
-import org.apache.hyracks.storage.am.rtree.AbstractRTreeTestContext;
-import org.apache.hyracks.storage.am.rtree.RTreeCheckTuple;
-import org.apache.hyracks.storage.am.rtree.frames.RTreePolicyType;
+import org.apache.hyracks.storage.am.trtree.AbstractRTreeTestContext;
+import org.apache.hyracks.storage.am.trtree.RTreeCheckTuple;
+import org.apache.hyracks.storage.am.trtree.frames.RTreePolicyType;
 import org.apache.hyracks.storage.common.buffercache.IBufferCache;
 
 @SuppressWarnings("rawtypes")

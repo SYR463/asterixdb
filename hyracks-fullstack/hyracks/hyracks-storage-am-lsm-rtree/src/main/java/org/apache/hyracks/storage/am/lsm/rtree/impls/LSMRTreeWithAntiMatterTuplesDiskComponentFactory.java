@@ -25,7 +25,7 @@ import org.apache.hyracks.storage.am.lsm.common.api.ILSMDiskComponentFactory;
 import org.apache.hyracks.storage.am.lsm.common.impls.AbstractLSMIndex;
 import org.apache.hyracks.storage.am.lsm.common.impls.LSMComponentFileReferences;
 import org.apache.hyracks.storage.am.lsm.common.impls.TreeIndexFactory;
-import org.apache.hyracks.storage.am.rtree.impls.RTree;
+import org.apache.hyracks.storage.am.trtree.impls.RTree;
 
 public class LSMRTreeWithAntiMatterTuplesDiskComponentFactory implements ILSMDiskComponentFactory {
     private final TreeIndexFactory<RTree> rtreeFactory;

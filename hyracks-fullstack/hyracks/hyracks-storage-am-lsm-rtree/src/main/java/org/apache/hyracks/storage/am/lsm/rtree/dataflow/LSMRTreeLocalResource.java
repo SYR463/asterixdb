@@ -43,7 +43,7 @@ import org.apache.hyracks.storage.am.lsm.common.api.IVirtualBufferCache;
 import org.apache.hyracks.storage.am.lsm.common.api.IVirtualBufferCacheProvider;
 import org.apache.hyracks.storage.am.lsm.common.dataflow.LsmResource;
 import org.apache.hyracks.storage.am.lsm.rtree.utils.LSMRTreeUtils;
-import org.apache.hyracks.storage.am.rtree.frames.RTreePolicyType;
+import org.apache.hyracks.storage.am.trtree.frames.RTreePolicyType;
 import org.apache.hyracks.storage.common.IIndex;
 import org.apache.hyracks.storage.common.IStorageManager;
 

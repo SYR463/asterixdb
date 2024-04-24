@@ -26,9 +26,9 @@ import org.apache.hyracks.api.io.IJsonSerializable;
 import org.apache.hyracks.api.io.IPersistedResourceRegistry;
 import org.apache.hyracks.storage.am.common.api.IPrimitiveValueProvider;
 import org.apache.hyracks.storage.am.common.api.IPrimitiveValueProviderFactory;
-import org.apache.hyracks.storage.am.rtree.impls.DoublePrimitiveValueProviderFactory;
-import org.apache.hyracks.storage.am.rtree.impls.FloatPrimitiveValueProviderFactory;
-import org.apache.hyracks.storage.am.rtree.impls.IntegerPrimitiveValueProviderFactory;
+import org.apache.hyracks.storage.am.trtree.impls.DoublePrimitiveValueProviderFactory;
+import org.apache.hyracks.storage.am.trtree.impls.FloatPrimitiveValueProviderFactory;
+import org.apache.hyracks.storage.am.trtree.impls.IntegerPrimitiveValueProviderFactory;
 
 import com.fasterxml.jackson.databind.JsonNode;
 

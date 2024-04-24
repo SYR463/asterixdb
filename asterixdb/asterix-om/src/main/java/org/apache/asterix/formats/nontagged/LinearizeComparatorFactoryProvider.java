@@ -25,9 +25,9 @@ import org.apache.hyracks.algebricks.common.exceptions.AlgebricksException;
 import org.apache.hyracks.algebricks.data.ILinearizeComparatorFactoryProvider;
 import org.apache.hyracks.api.dataflow.value.IBinaryComparatorFactory;
 import org.apache.hyracks.api.dataflow.value.ILinearizeComparatorFactory;
-import org.apache.hyracks.storage.am.rtree.linearize.HilbertDoubleComparatorFactory;
-import org.apache.hyracks.storage.am.rtree.linearize.ZCurveDoubleComparatorFactory;
-import org.apache.hyracks.storage.am.rtree.linearize.ZCurveIntComparatorFactory;
+import org.apache.hyracks.storage.am.trtree.linearize.HilbertDoubleComparatorFactory;
+import org.apache.hyracks.storage.am.trtree.linearize.ZCurveDoubleComparatorFactory;
+import org.apache.hyracks.storage.am.trtree.linearize.ZCurveIntComparatorFactory;
 
 public class LinearizeComparatorFactoryProvider implements ILinearizeComparatorFactoryProvider, Serializable {
 

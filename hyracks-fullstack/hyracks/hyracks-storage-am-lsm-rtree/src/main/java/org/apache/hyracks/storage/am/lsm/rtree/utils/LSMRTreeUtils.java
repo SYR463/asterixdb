@@ -63,15 +63,15 @@ import org.apache.hyracks.storage.am.lsm.rtree.impls.RTreeFactory;
 import org.apache.hyracks.storage.am.lsm.rtree.tuples.LSMRTreeCopyTupleWriterFactory;
 import org.apache.hyracks.storage.am.lsm.rtree.tuples.LSMRTreeTupleWriterFactory;
 import org.apache.hyracks.storage.am.lsm.rtree.tuples.LSMRTreeTupleWriterFactoryForPointMBR;
-import org.apache.hyracks.storage.am.rtree.frames.RTreeFrameFactory;
-import org.apache.hyracks.storage.am.rtree.frames.RTreeNSMInteriorFrameFactory;
-import org.apache.hyracks.storage.am.rtree.frames.RTreeNSMLeafFrameFactory;
-import org.apache.hyracks.storage.am.rtree.frames.RTreePolicyType;
-import org.apache.hyracks.storage.am.rtree.impls.RTree;
-import org.apache.hyracks.storage.am.rtree.linearize.HilbertDoubleComparatorFactory;
-import org.apache.hyracks.storage.am.rtree.linearize.ZCurveDoubleComparatorFactory;
-import org.apache.hyracks.storage.am.rtree.linearize.ZCurveIntComparatorFactory;
-import org.apache.hyracks.storage.am.rtree.tuples.RTreeTypeAwareTupleWriterFactory;
+import org.apache.hyracks.storage.am.trtree.frames.RTreeFrameFactory;
+import org.apache.hyracks.storage.am.trtree.frames.RTreeNSMInteriorFrameFactory;
+import org.apache.hyracks.storage.am.trtree.frames.RTreeNSMLeafFrameFactory;
+import org.apache.hyracks.storage.am.trtree.frames.RTreePolicyType;
+import org.apache.hyracks.storage.am.trtree.impls.RTree;
+import org.apache.hyracks.storage.am.trtree.linearize.HilbertDoubleComparatorFactory;
+import org.apache.hyracks.storage.am.trtree.linearize.ZCurveDoubleComparatorFactory;
+import org.apache.hyracks.storage.am.trtree.linearize.ZCurveIntComparatorFactory;
+import org.apache.hyracks.storage.am.trtree.tuples.RTreeTypeAwareTupleWriterFactory;
 import org.apache.hyracks.storage.common.buffercache.IBufferCache;
 
 public class LSMRTreeUtils {

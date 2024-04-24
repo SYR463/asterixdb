@@ -25,7 +25,7 @@ import org.apache.hyracks.storage.am.lsm.common.api.ILSMComponentFilter;
 import org.apache.hyracks.storage.am.lsm.common.api.IVirtualBufferCache;
 import org.apache.hyracks.storage.am.lsm.common.impls.AbstractLSMWithBuddyMemoryComponent;
 import org.apache.hyracks.storage.am.lsm.common.impls.LSMComponentFileReferences;
-import org.apache.hyracks.storage.am.rtree.impls.RTree;
+import org.apache.hyracks.storage.am.trtree.impls.RTree;
 
 public class LSMRTreeMemoryComponent extends AbstractLSMWithBuddyMemoryComponent {
 

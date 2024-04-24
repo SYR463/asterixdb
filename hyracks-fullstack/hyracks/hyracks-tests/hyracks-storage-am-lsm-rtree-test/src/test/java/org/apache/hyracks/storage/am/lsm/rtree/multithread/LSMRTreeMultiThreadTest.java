@@ -32,9 +32,9 @@ import org.apache.hyracks.storage.am.common.api.ITreeIndex;
 import org.apache.hyracks.storage.am.common.datagen.ProbabilityHelper;
 import org.apache.hyracks.storage.am.lsm.rtree.util.LSMRTreeTestHarness;
 import org.apache.hyracks.storage.am.lsm.rtree.utils.LSMRTreeUtils;
-import org.apache.hyracks.storage.am.rtree.AbstractRTreeExamplesTest.RTreeType;
-import org.apache.hyracks.storage.am.rtree.AbstractRTreeMultiThreadTest;
-import org.apache.hyracks.storage.am.rtree.frames.RTreePolicyType;
+import org.apache.hyracks.storage.am.trtree.AbstractRTreeExamplesTest.RTreeType;
+import org.apache.hyracks.storage.am.trtree.AbstractRTreeMultiThreadTest;
+import org.apache.hyracks.storage.am.trtree.frames.RTreePolicyType;
 
 public class LSMRTreeMultiThreadTest extends AbstractRTreeMultiThreadTest {
 

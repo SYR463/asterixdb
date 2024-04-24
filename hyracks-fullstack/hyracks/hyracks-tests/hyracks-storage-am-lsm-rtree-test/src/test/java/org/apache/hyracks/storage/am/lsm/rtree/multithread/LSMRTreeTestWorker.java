@@ -31,7 +31,7 @@ import org.apache.hyracks.storage.am.common.datagen.DataGenThread;
 import org.apache.hyracks.storage.am.lsm.rtree.impls.LSMRTree;
 import org.apache.hyracks.storage.am.lsm.rtree.impls.LSMRTreeAccessor;
 import org.apache.hyracks.storage.am.lsm.rtree.impls.LSMRTreeOpContext;
-import org.apache.hyracks.storage.am.rtree.impls.SearchPredicate;
+import org.apache.hyracks.storage.am.trtree.impls.SearchPredicate;
 import org.apache.hyracks.storage.common.IIndex;
 import org.apache.hyracks.storage.common.IIndexCursor;
 import org.apache.hyracks.storage.common.MultiComparator;

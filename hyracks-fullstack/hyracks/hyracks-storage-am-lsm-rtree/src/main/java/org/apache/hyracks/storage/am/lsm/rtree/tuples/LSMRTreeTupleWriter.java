@@ -26,7 +26,7 @@ import org.apache.hyracks.dataflow.common.data.accessors.ITupleReference;
 import org.apache.hyracks.storage.am.common.api.INullIntrospector;
 import org.apache.hyracks.storage.am.common.util.BitOperationUtils;
 import org.apache.hyracks.storage.am.lsm.common.api.ILSMTreeTupleWriter;
-import org.apache.hyracks.storage.am.rtree.tuples.RTreeTypeAwareTupleWriter;
+import org.apache.hyracks.storage.am.trtree.tuples.RTreeTypeAwareTupleWriter;
 
 public class LSMRTreeTupleWriter extends RTreeTypeAwareTupleWriter implements ILSMTreeTupleWriter {
     private boolean isAntimatter;

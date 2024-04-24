@@ -28,9 +28,9 @@ import org.apache.hyracks.storage.am.config.AccessMethodTestsConfig;
 import org.apache.hyracks.storage.am.lsm.common.api.ILSMIndexAccessor;
 import org.apache.hyracks.storage.am.lsm.rtree.util.LSMRTreeTestHarness;
 import org.apache.hyracks.storage.am.lsm.rtree.util.LSMRTreeWithAntiMatterTuplesTestContext;
-import org.apache.hyracks.storage.am.rtree.AbstractRTreeDeleteTest;
-import org.apache.hyracks.storage.am.rtree.AbstractRTreeTestContext;
-import org.apache.hyracks.storage.am.rtree.frames.RTreePolicyType;
+import org.apache.hyracks.storage.am.trtree.AbstractRTreeDeleteTest;
+import org.apache.hyracks.storage.am.trtree.AbstractRTreeTestContext;
+import org.apache.hyracks.storage.am.trtree.frames.RTreePolicyType;
 import org.junit.After;
 import org.junit.Before;
 

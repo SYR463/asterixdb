@@ -23,6 +23,7 @@ public enum IndexOperation {
     CREATE,
     INSERT,
     DELETE,
+    REINSERT,
     UPDATE,
     UPSERT,
     SEARCH,

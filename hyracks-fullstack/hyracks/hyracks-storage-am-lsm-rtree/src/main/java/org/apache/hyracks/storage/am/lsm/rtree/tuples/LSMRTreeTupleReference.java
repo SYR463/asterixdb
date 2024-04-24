@@ -22,7 +22,7 @@ package org.apache.hyracks.storage.am.lsm.rtree.tuples;
 import org.apache.hyracks.api.dataflow.value.ITypeTraits;
 import org.apache.hyracks.storage.am.common.util.BitOperationUtils;
 import org.apache.hyracks.storage.am.lsm.common.api.ILSMTreeTupleReference;
-import org.apache.hyracks.storage.am.rtree.tuples.RTreeTypeAwareTupleReference;
+import org.apache.hyracks.storage.am.trtree.tuples.RTreeTypeAwareTupleReference;
 
 public class LSMRTreeTupleReference extends RTreeTypeAwareTupleReference implements ILSMTreeTupleReference {
 

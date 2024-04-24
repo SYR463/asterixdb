@@ -21,8 +21,8 @@ package org.apache.hyracks.storage.am.lsm.rtree.tuples;
 
 import org.apache.hyracks.api.dataflow.value.ITypeTraits;
 import org.apache.hyracks.storage.am.common.api.INullIntrospector;
-import org.apache.hyracks.storage.am.rtree.tuples.RTreeTypeAwareTupleWriter;
-import org.apache.hyracks.storage.am.rtree.tuples.RTreeTypeAwareTupleWriterFactory;
+import org.apache.hyracks.storage.am.trtree.tuples.RTreeTypeAwareTupleWriter;
+import org.apache.hyracks.storage.am.trtree.tuples.RTreeTypeAwareTupleWriterFactory;
 
 public class LSMRTreeTupleWriterFactoryForPointMBR extends RTreeTypeAwareTupleWriterFactory {
 

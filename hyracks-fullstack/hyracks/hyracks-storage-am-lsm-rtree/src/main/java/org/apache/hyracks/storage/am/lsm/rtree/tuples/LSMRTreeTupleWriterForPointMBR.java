@@ -27,7 +27,7 @@ import org.apache.hyracks.storage.am.common.api.INullIntrospector;
 import org.apache.hyracks.storage.am.common.util.BitOperationUtils;
 import org.apache.hyracks.storage.am.lsm.common.api.ILSMTreeTupleReference;
 import org.apache.hyracks.storage.am.lsm.common.api.ILSMTreeTupleWriter;
-import org.apache.hyracks.storage.am.rtree.tuples.RTreeTypeAwareTupleWriter;
+import org.apache.hyracks.storage.am.trtree.tuples.RTreeTypeAwareTupleWriter;
 import org.apache.hyracks.util.encoding.VarLenIntEncoderDecoder;
 
 /**

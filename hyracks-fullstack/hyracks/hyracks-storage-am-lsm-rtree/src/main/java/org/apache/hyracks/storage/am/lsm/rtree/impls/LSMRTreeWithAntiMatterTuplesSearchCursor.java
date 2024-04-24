@@ -32,9 +32,9 @@ import org.apache.hyracks.storage.am.lsm.common.api.ILSMComponent.LSMComponentTy
 import org.apache.hyracks.storage.am.lsm.common.api.ILSMComponentFilter;
 import org.apache.hyracks.storage.am.lsm.common.api.ILSMIndexOperationContext;
 import org.apache.hyracks.storage.am.lsm.common.impls.LSMIndexSearchCursor;
-import org.apache.hyracks.storage.am.rtree.impls.RTree;
-import org.apache.hyracks.storage.am.rtree.impls.RTreeSearchCursor;
-import org.apache.hyracks.storage.am.rtree.impls.SearchPredicate;
+import org.apache.hyracks.storage.am.trtree.impls.RTree;
+import org.apache.hyracks.storage.am.trtree.impls.RTreeSearchCursor;
+import org.apache.hyracks.storage.am.trtree.impls.SearchPredicate;
 import org.apache.hyracks.storage.common.ICursorInitialState;
 import org.apache.hyracks.storage.common.IIndexCursorStats;
 import org.apache.hyracks.storage.common.ISearchOperationCallback;

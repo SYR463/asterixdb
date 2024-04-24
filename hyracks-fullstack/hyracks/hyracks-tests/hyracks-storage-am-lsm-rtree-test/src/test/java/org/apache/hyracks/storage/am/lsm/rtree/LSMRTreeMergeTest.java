@@ -27,8 +27,8 @@ import org.apache.hyracks.storage.am.common.api.IPrimitiveValueProviderFactory;
 import org.apache.hyracks.storage.am.config.AccessMethodTestsConfig;
 import org.apache.hyracks.storage.am.lsm.rtree.util.LSMRTreeTestContext;
 import org.apache.hyracks.storage.am.lsm.rtree.util.LSMRTreeTestHarness;
-import org.apache.hyracks.storage.am.rtree.AbstractRTreeTestContext;
-import org.apache.hyracks.storage.am.rtree.frames.RTreePolicyType;
+import org.apache.hyracks.storage.am.trtree.AbstractRTreeTestContext;
+import org.apache.hyracks.storage.am.trtree.frames.RTreePolicyType;
 import org.junit.After;
 import org.junit.Before;
 

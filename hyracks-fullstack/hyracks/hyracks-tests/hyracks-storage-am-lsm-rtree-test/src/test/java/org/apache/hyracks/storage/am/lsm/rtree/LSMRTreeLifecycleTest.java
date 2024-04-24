@@ -29,9 +29,9 @@ import org.apache.hyracks.storage.am.common.api.IPrimitiveValueProviderFactory;
 import org.apache.hyracks.storage.am.lsm.rtree.impls.LSMRTree;
 import org.apache.hyracks.storage.am.lsm.rtree.util.LSMRTreeTestContext;
 import org.apache.hyracks.storage.am.lsm.rtree.util.LSMRTreeTestHarness;
-import org.apache.hyracks.storage.am.rtree.RTreeTestUtils;
-import org.apache.hyracks.storage.am.rtree.frames.RTreePolicyType;
-import org.apache.hyracks.storage.am.rtree.util.RTreeUtils;
+import org.apache.hyracks.storage.am.trtree.RTreeTestUtils;
+import org.apache.hyracks.storage.am.trtree.frames.RTreePolicyType;
+import org.apache.hyracks.storage.am.trtree.util.RTreeUtils;
 
 public class LSMRTreeLifecycleTest extends AbstractIndexLifecycleTest {
 

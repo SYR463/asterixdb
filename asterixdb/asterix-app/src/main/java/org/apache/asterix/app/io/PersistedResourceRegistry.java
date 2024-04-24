@@ -124,13 +124,13 @@ import org.apache.hyracks.storage.am.lsm.invertedindex.tokenizers.UTF8NGramToken
 import org.apache.hyracks.storage.am.lsm.invertedindex.tokenizers.UTF8WordTokenFactory;
 import org.apache.hyracks.storage.am.lsm.rtree.dataflow.LSMRTreeLocalResource;
 import org.apache.hyracks.storage.am.lsm.rtree.dataflow.LSMRTreeWithAntiMatterLocalResource;
-import org.apache.hyracks.storage.am.rtree.frames.RTreePolicyType;
-import org.apache.hyracks.storage.am.rtree.impls.DoublePrimitiveValueProviderFactory;
-import org.apache.hyracks.storage.am.rtree.impls.FloatPrimitiveValueProviderFactory;
-import org.apache.hyracks.storage.am.rtree.impls.IntegerPrimitiveValueProviderFactory;
-import org.apache.hyracks.storage.am.rtree.linearize.HilbertDoubleComparatorFactory;
-import org.apache.hyracks.storage.am.rtree.linearize.ZCurveDoubleComparatorFactory;
-import org.apache.hyracks.storage.am.rtree.linearize.ZCurveIntComparatorFactory;
+import org.apache.hyracks.storage.am.trtree.frames.RTreePolicyType;
+import org.apache.hyracks.storage.am.trtree.impls.DoublePrimitiveValueProviderFactory;
+import org.apache.hyracks.storage.am.trtree.impls.FloatPrimitiveValueProviderFactory;
+import org.apache.hyracks.storage.am.trtree.impls.IntegerPrimitiveValueProviderFactory;
+import org.apache.hyracks.storage.am.trtree.linearize.HilbertDoubleComparatorFactory;
+import org.apache.hyracks.storage.am.trtree.linearize.ZCurveDoubleComparatorFactory;
+import org.apache.hyracks.storage.am.trtree.linearize.ZCurveIntComparatorFactory;
 import org.apache.hyracks.storage.common.LocalResource;
 
 import com.fasterxml.jackson.databind.JsonNode;
