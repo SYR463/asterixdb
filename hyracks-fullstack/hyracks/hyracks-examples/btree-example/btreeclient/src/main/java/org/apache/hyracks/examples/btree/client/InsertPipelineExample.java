@@ -118,9 +118,8 @@ public class InsertPipelineExample {
                 // we will use this as payload
                 new UTF8StringSerializerDeserializer() });
 
-        // generate numRecords records with field 2 being unique, integer values
-        // in [0, 100000], and strings with max length of 10 characters, and
-        // random seed 100
+        // generate numRecords records with field 2 being unique, integer values in [0, 100000],
+        // and strings with max length of 10 characters, and random seed 100
         DataGenOperatorDescriptor dataGen =
                 new DataGenOperatorDescriptor(spec, recDesc, options.numTuples, 2, 0, 100000, 10, 100);
         // run data generator on first nodecontroller given
@@ -140,8 +139,7 @@ public class InsertPipelineExample {
         IBinaryComparatorFactory[] primaryComparatorFactories = new IBinaryComparatorFactory[1];
         primaryComparatorFactories[0] = IntegerBinaryComparatorFactory.INSTANCE;
 
-        // the B-Tree expects its keyfields to be at the front of its input
-        // tuple
+        // the B-Tree expects its keyfields to be at the front of its input tuple
         int[] primaryFieldPermutation = { 2, 1, 3, 4 }; // map field 2 of input
                                                         // tuple to field 0 of
                                                         // B-Tree tuple, etc.

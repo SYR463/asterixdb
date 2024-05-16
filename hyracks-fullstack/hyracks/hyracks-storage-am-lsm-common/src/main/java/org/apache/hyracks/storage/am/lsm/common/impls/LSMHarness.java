@@ -19,12 +19,21 @@
 
 package org.apache.hyracks.storage.am.lsm.common.impls;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.function.Predicate;
 
+import better.files.File;
 import org.apache.hyracks.api.exceptions.ErrorCode;
 import org.apache.hyracks.api.exceptions.HyracksDataException;
 import org.apache.hyracks.api.replication.IReplicationJob.ReplicationOperation;
@@ -63,6 +72,8 @@ import org.apache.logging.log4j.Logger;
 
 public class LSMHarness implements ILSMHarness {
     private static final Logger LOGGER = LogManager.getLogger();
+    private static long totalIndexConstructionTime = 0; // 累计索引构建时间
+
 
     protected final ILSMIndex lsmIndex;
     protected final ILSMIOOperationScheduler ioScheduler;
@@ -74,6 +85,7 @@ public class LSMHarness implements ILSMHarness {
     protected List<ILSMDiskComponent> componentsToBeReplicated;
     protected ITracer tracer;
     protected long traceCategory;
+
 
     public LSMHarness(ILSMIndex lsmIndex, ILSMIOOperationScheduler ioScheduler, ILSMMergePolicy mergePolicy,
             ILSMOperationTracker opTracker, boolean replicationEnabled, ITracer tracer) {
@@ -424,11 +436,34 @@ public class LSMHarness implements ILSMHarness {
             lsmIndex.allocateMemoryComponents();
         }
         boolean failedOperation = false;
+        // lsm index _ build start_time
+        long startTime = System.nanoTime();
         if (!getAndEnterComponents(ctx, opType, tryOperation)) {
             return false;
         }
         try {
             lsmIndex.modify(ctx, tuple);
+
+            long endTime = System.nanoTime();  // 记录索引操作结束时间
+            long indexConstructionTime = endTime - startTime;  // 计算本次索引构造时间
+
+            // 记录本次索引构造时间
+            LOGGER.info("Index construction time for current modify operation: " + indexConstructionTime + " nanoseconds.");
+
+            // 指定日志文件保存的路径
+            String logFilePath = "/home/yiran/Desktop/fileLog/file1.log";
+            Path path = Paths.get(logFilePath);
+
+            // 创建日志文件并写入内容
+            try (BufferedWriter writer = Files.newBufferedWriter(path, StandardCharsets.UTF_8, StandardOpenOption.CREATE, StandardOpenOption.APPEND)) {
+                // 将本次索引构造时间写入日志文件
+                writer.write("Index construction time for current modify operation: " + indexConstructionTime + " nanoseconds.\n");
+            } catch (IOException e) {
+                // 处理文件写入异常
+                e.printStackTrace();
+            }
+
+            // 索引修改后，将可变组件标记为已修改
             // The mutable component is always in the first index.
             AbstractLSMMemoryComponent mutableComponent = (AbstractLSMMemoryComponent) ctx.getComponentHolder().get(0);
             mutableComponent.setModified();
